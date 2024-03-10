@@ -2,9 +2,10 @@
 
 ### Over view about club members data
 sql code
+    
     select * from club_members_info limit 10;
 
-##First 10 rows of club members:
+## First 10 rows of club members:
 
 |full_name|age|martial_status|email|phone|full_address|job_title|membership_date|
 |---------|---|--------------|-----|-----|------------|---------|---------------|
