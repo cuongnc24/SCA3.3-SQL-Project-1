@@ -58,3 +58,24 @@ SQL Code
 |MENDIE ALEXANDRESCU|46|single|malexandrescu8@state.gov|504-918-4753|34 Delladonna Terrace,New Orleans,Louisiana|Systems Administrator III|3/12/1921|
 |FEY KLOSS|52|married|fkloss9@godaddy.com|808-177-0318|8976 Jackson Park,Honolulu,Hawaii|Chemical Engineer|11/5/2014|
 
+## Adjust age out of realistic range
+SQL CODE
+    UPDATE club_member_info_cleaned 
+    SET age = NULL
+    WHERE age > 100;
+    SELECT * FROM club_member_info_cleaned cmic 
+    WHERE age IS NULL 
+    LIMIT 10;
+## 10 rows with age out of realistic range
+|full_name|age|martial_status|email|phone|full_address|job_title|membership_date|
+|---------|---|--------------|-----|-----|------------|---------|---------------|
+|JORI SANZ||married|jsanz3i@google.cn|904-906-7537|99 West Crossing,Jacksonville,Florida|Professor|2/15/2012|
+|CARLYE GRAEBER||married|cgraeber6n@quantcast.com|214-345-1363|8 Dexter Junction,Dallas,Texas|Actuary|3/10/2021|
+|SHURWOOD STRUTLEY||married|sstrutley9w@craigslist.org|804-636-0234|7779 Main Road,Richmond,Virginia|Nuclear Power Engineer|6/30/2014|
+|CORBIN HILLAN||single|chillandg@time.com|267-229-4017|78 La Follette Trail,Philadelphia,Pennsylvania|Account Representative II|7/7/2021|
+|SMITTY BULMER||divorced|sbulmergm@addthis.com||23370 Forest Dale Street,Pittsburgh,Pennsylvania|VP Marketing|9/25/2017|
+|LEONORE BOOTHJARVIS||married|lboothjarvisi2@bloglines.com|713-618-0516|33110 Luster Plaza,Houston,Texas|Sales Representative|6/13/2022|
+|AUNDREA VILLAR||married|avillarm8@privacy.gov.au|571-942-0462|58201 Utah Terrace,Arlington,Virginia|Senior Sales Associate|6/28/2012|
+|CHERY BATISSE||divorced|cbatissen3@bandcamp.com|804-431-7226|604 Elgar Way,Richmond,Virginia|VP Product Management|7/30/2012|
+|ERINA AUBERT||married|eaubertqp@cargocollective.com|615-711-2470|2597 Hallows Road,Nashville,Tennessee|Automation Specialist II|11/2/2012|
+|BALDWIN RIPPEN||single|brippen1z@nationalgeographic.com|912-469-5562|2 Esker Alley,Savannah,Georgia|Web Developer II|12/1/2015|
