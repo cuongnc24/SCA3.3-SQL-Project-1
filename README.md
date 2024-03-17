@@ -2,7 +2,6 @@
 
 ### Over view about club members data
 sql code
-    
     select * from club_members_info limit 10;
 
 ## First 10 rows of club members:
@@ -20,8 +19,8 @@ sql code
 |mendie alexandrescu|46|single|malexandrescu8@state.gov|504-918-4753|34 Delladonna Terrace,New Orleans,Louisiana|Systems Administrator III|3/12/1921|
 | fey kloss|52|married|fkloss9@godaddy.com|808-177-0318|8976 Jackson Park,Honolulu,Hawaii|Chemical Engineer|11/5/2014|
 
-## Delete
-sql code 
+### Delete Leading and trailing whitespaces
+sql code
     SELECT  TRIM(full_name), * from club_member_info_cleaned cmic LIMIT 10;
 ## First 10 rows
 |TRIM(full_name)|full_name|age|martial_status|email|phone|full_address|job_title|membership_date|
